@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$HOME/.local/share/agent-handoff/handoff/agent_handoff.py\" hook-codex",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

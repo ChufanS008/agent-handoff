@@ -1,0 +1,17 @@
+{
+  "root": "~/agent-kb",
+  "human": "the human",
+  "utc_offset_hours": -8,
+  "card_agents": ["Gemini"],
+  "projects": [
+    {"name": "Website", "paths": ["~/code/website"], "keywords": ["landing page", "pricing page"]},
+    {"name": "Mobile app", "paths": ["~/code/app"], "keywords": ["ios", "testflight"]}
+  ],
+  "board_days": 7,
+  "keep_days": 30,
+  "memory_dirs": ["~/.claude/projects/-Users-you/memory"],
+  "mirror_agent": "Claude",
+  "mirror_types": ["user", "feedback", "reference", "project"],
+  "focus_file": "current-focus.md",
+  "mirror_cmd": "python3 ~/.local/share/agent-handoff/handoff/memory_mirror.py"
+}

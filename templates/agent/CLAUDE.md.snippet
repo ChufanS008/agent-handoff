@@ -1,0 +1,8 @@
+## Working with other agents
+
+Other agents (Codex and others) work on the same projects. The shared layer is at `~/agent-kb/agents/`. Read `_shared/README.md` once.
+
+1. Request with earlier history ("continue", "the thing from before", "what Codex did"): run `python3 <install>/handoff/agent_handoff.py recent <keyword>`. On a hit, `show <ID>` and continue from the files it lists. Do not make the human repeat themselves.
+2. No history implied: skip the lookup.
+3. Corrected by the human: write a feedback entry in native memory in the same session.
+4. Session produced a decision or a deliverable: write a return card in `agents/Claude/return/`.

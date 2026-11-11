@@ -1,0 +1,7 @@
+## Working with other agents
+
+Claude and other agents work on the same projects. The shared layer is at `~/agent-kb/agents/`. Read `_shared/README.md`, `_shared/conventions.md` and `_shared/authorization.md` once per session.
+
+1. Before a task with earlier history, run `python3 <install>/handoff/agent_handoff.py recent <keyword>`, then `show <ID>` on a hit.
+2. Write only to `agents/Codex/`. Corrections go to `agents/Codex/memory/` in the same session, decisions and deliverables go to a return card in `agents/Codex/return/`.
+3. Never edit `_shared/` or `kb/`. If `_shared/conventions.md` disagrees with your own memory, the shared file wins.
